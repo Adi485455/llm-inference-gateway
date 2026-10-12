@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Allow the example configuration
+!.env.example
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and operating system files
+.DS_Store
+.vscode/
