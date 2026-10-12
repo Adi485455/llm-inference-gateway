@@ -14,6 +14,10 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         extra="ignore",
     )
+    redis_url: str = "redis://localhost:6379/0"
+    cache_ttl_seconds: int = 300
+    gateway_api_key: str
+    max_concurrent_requests: int = 5
 
 
 settings = Settings()
